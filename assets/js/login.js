@@ -60,7 +60,7 @@ $(function() {
                 localStorage.setItem('token', res.token);
                 // console.log(res.token);
 
-                // location.href = "./index.html";
+                location.href = "./index.html";
             }
         })
     })

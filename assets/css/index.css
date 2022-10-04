@@ -35,6 +35,21 @@ a {
     height: 40px;
 }
 
+#tout {
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(19, 167, 0);
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 6px;
+    font-size: 20px;
+    text-align: center;
+    top: 10px;
+    left: -35px;
+}
+
 .userinfo .text-avatar {
     position: relative;
     display: inline-block;

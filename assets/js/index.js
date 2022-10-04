@@ -1,4 +1,5 @@
 $(function() {
+    // xravatar();
     Getdata();
 
     $('.layui-icon').on('click', function() {
@@ -39,10 +40,18 @@ function xravatar(res) {
     $('.welcome').html(name);
     // console.log(name);
     var first = name[0].toUpperCase();
-    if (res.data.user_pic === null) {
+    console.log(res);
+
+    if (res.data.user_pic !== null) {
+        $('.layui-nav-img').attr("src", res.data.user_pic).show();
+        $('.text-avatar').hide();
+
+    } else {
         $('.layui-nav-img').hide();
         $('.text-avatar').html(first).show();
     }
-    $('.layui-nav-img').attr("src", res.data.user_pic);
-    $('.text-avatar').html(first).hide();
+
+
+
+
 };
