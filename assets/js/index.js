@@ -40,7 +40,7 @@ function xravatar(res) {
     $('.welcome').html(name);
     // console.log(name);
     var first = name[0].toUpperCase();
-    console.log(res);
+    // console.log(res);
 
     if (res.data.user_pic !== null) {
         $('.layui-nav-img').attr("src", res.data.user_pic).show();

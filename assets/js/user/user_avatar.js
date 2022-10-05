@@ -59,10 +59,13 @@ $(function() {
                 if (res.status !== 0) {
                     return layer.msg('上传失败')
                 }
-                console.log(res);
+                // console.log(res);
                 window.parent.Getdata(res);
             }
         })
     })
+
+
+
 
 })
